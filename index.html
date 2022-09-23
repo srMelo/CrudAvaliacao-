@@ -5,36 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>ATOS-CRUD</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Duvida</title>
 </head>
 <header>
+
 </header>
 
-    <body>
-
-        <div class="container">
-            <button class="btn-success" onclick="mostraInput()" >Novo Registro</button>
-            <form action="#">
-                <input id="inName" placeholder="Nome" type="text">
-                <input id="inEmail" placeholder="Email" type="email">
-                <select name="gender" id="seGender">
-                    <option value="">Selecione</option>
-                    <option value="male">Masculino</option>
-                    <option value="female">Feminino</option>
-                </select>
-                <select name="status" id="seStatus">
-                    <option value="">Selecione</option>
-                    <option value="active">Ativo</option>
-                    <option value="inactive">Inativo</option>
-                </select>
-                <input value="Enviar" type="button" id="btnSubmit" onclick="addUser()">
-            </form>
-            <div id="tableContainer">
-            </div>
+<body>
+    <div class="container">
+        <button class="btn-success" id="btnAddUser">Novo Registro</button> 
+        <form action="#" id="formUser">
+            <input id="inName" placeholder="Nome" type="text">
+            <input id="inEmail" placeholder="Email" type="email">
+            <select name="gender" id="seGender">
+                <option value="">Selecione</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select>
+            <select name="status" id="seStatus">
+                <option value="">Selecione</option>
+                <option value="active">Ativo</option>
+                <option value="inactive">Inativo</option>
+            </select>
+            <input value="Enviar" type="button" id="btnSubmit" >
+        </form>
+        <div id="tableContainer">
         </div>
-    
-        <script src="api/api.js" type="module"></script>
-        <script src="app.js" type="module"></script>
+    </div>
+
+    <script src="api/api.js" type="module"></script>
+    <script src="app.js" type="module"></script>
 </body>
 </html>
