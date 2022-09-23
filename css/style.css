@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.btn-success{
+    background-color: rgb(38, 88, 226);
+    color: #ffff;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    font-size: 13px;
+    height:30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+th{
+    background-color: rgb(58, 70, 64);
+    color: #ffff;
+    font-size: 14px;
+    height: 30px;
+    font-weight: bold;
+}
+
+tr{
+    height: 30px;
+}
+
+tr:nth-child(odd){
+    background-color: #ccc;
+}
+
+/* form {
+    display: none;
+} */
